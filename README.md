@@ -34,8 +34,8 @@ Environment Variables
 |region|*[region name]*|ip-ranges.json내 region|
 |service|*[service name]*|ip-ranges.json내 service|
 |snsarn|*[email sns arn]*|결과를 email로 전송하기 위한 SNS ARN|
-\
-예제는 cloudfront ip변경만 추적하는 예제이고, cloudfront는 Global서비스이니 region도 GLOBAL로 설정하면 되나, S3같은 경우 region도 희망하는 지역으로 환경변수를 설정하면 된다.
+
+본 코드는 cloudfront ip변경만 추적하는 예제이고, cloudfront는 Global서비스이니 region도 GLOBAL로 설정하면 되나, S3같은 경우 region도 희망하는 지역으로 환경변수를 설정하면 된다.
 
 ### ip-ranges.json 구문
 ```json
