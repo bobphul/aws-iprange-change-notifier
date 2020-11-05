@@ -1,0 +1,31 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListAllMyBuckets",
+                "s3:GetBucketLocation"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::(bucket name)",
+                "arn:aws:s3:::(bucket name)/*"
+            ]
+        },
+        {
+            "Action": [
+                "sns:Publish",
+                "sns:Subscribe"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:sns:(region):(account id):(sns name)"
+            ]
+        }
+    ]
+}
